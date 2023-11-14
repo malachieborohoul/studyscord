@@ -10,3 +10,6 @@ class Room(models.Model):
     # participants =
     update = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return self.name
