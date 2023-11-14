@@ -11,6 +11,6 @@ class Room(models.Model):
     update = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
-    # Pytho
+    # Pyth
     def __str__(self) -> str:
         return self.name
