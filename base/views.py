@@ -2,8 +2,15 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home():
-    return render('',)
+rooms=[
+    {'id':1, 'name':"Let's learn python"},
+    {'id':2, 'name':"Design with me"},
+    {'id':3, 'name':"Frontend developers"},
+]
 
-def room():
-    return render('')
+def home(request):
+    context ={'rooms':rooms}
+    return render(request, 'home.html',context)
+
+def room(request):
+    return render(request, 'room.html')
